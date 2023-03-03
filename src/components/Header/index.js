@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from 'bootstrap';
 
-const Header = () => {
+function Header({ currentPage, handlePageChange }) {
 
     const navbarStyle = {
         padding: "20px",
@@ -16,16 +16,20 @@ const Header = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                        <a className="nav-link" href="#">About Me </a>
+                        <a className={currentPage === 'About' ? 'nav-link active' : 'nav-link'} href="#about"
+                            onClick={() => handlePageChange('About')}>About Me </a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Portfolio</a>
+                        <a className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'} href="#projects"
+                            onClick={() => handlePageChange('Projects')}>Projects</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Contact</a>
+                    <a className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'} href="#contact"
+                            onClick={() => handlePageChange('Contact')}>Contact</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Résumé</a>
+                        <a className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'} href="#resume"
+                            onClick={() => handlePageChange('Resume')}>Résumé</a>
                     </li>
                 </ul>
             </div>

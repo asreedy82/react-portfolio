@@ -1,10 +1,10 @@
 import './App.css';
-import Header from './components/Header/index';
+import PortfolioContainer from './components/PortfolioContainer';
 
 function App() {
   return (
     <div>
-      <Header />
+      <PortfolioContainer />
     </div>
   )
 }
