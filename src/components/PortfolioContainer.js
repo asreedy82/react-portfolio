@@ -3,7 +3,7 @@ import Header from './Header/index';
 import Footer from './Footer';
 import About from './pages/About';
 import Resume from './pages/Resume';
-import Projects from './pages/Projects';
+import ProjectsContainer from './pages/ProjectsContainer';
 import Contact from './pages/Contact';
 
 export default function PortfolioContainer() {
@@ -15,8 +15,8 @@ export default function PortfolioContainer() {
 
     // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
     const renderPage = () => {
-        if (currentPage === 'Projects') {
-            return <Projects />;
+        if (currentPage === 'ProjectsContainer') {
+            return <ProjectsContainer />;
         }
         if (currentPage === 'Contact') {
             return <Contact />;

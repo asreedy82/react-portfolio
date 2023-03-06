@@ -20,8 +20,8 @@ function Header({ currentPage, handlePageChange }) {
                             onClick={() => handlePageChange('About')}>About Me </a>
                     </li>
                     <li className="nav-item">
-                        <a className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'} href="#projects"
-                            onClick={() => handlePageChange('Projects')}>Projects</a>
+                        <a className={currentPage === 'ProjectsContainer' ? 'nav-link active' : 'nav-link'} href="#projects"
+                            onClick={() => handlePageChange('ProjectsContainer')}>Projects</a>
                     </li>
                     <li className="nav-item">
                     <a className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'} href="#contact"
