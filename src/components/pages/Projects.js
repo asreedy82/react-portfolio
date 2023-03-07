@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from 'bootstrap';
+import techBlogImage from '../assets/images/tech-blog-ss.png';
+import weatherImage from '../assets/images/weather-app-ss2.png';
+import quizImage from '../assets/images/javascript-quiz-challenge-ss1.png';
+import noteImage from '../assets/images/note-taker-ss.png';
+import textImage from '../assets/images/JATE-ss.png';
+import sauceImage from '../assets/images/03-Secretsaucelogo.png';
 
 export default function Projects({ handlePageChange }) {
 
   const projectBoxStyle = {
     padding: "10px",
-    border: "solid",
     margin: "4px"
+  }
+
+  const buttonStyle = {
+    margin: "3px"
   }
 
   return (
@@ -16,47 +25,74 @@ export default function Projects({ handlePageChange }) {
         <div className="container">
           <div className="row">
             <div className="col" style={projectBoxStyle}>
-              <div className="card" style={{width: "18rem"}}>
-                <img className="card-img-top" src="..." alt="Card image cap"/>
-                  <div className="card-body">
+              <div className="card" style={{width: "35rem"}}>
                     <h5 className="card-title">Tech Blog</h5>
+                <img className="card-img-top" src={techBlogImage} alt="Card image cap"/>
+                  <div className="card-body">
                     <p className="card-text">A blog site for sharing information/ideas related to coding and technology</p>
-                    <a href="#techblog" className="btn btn-primary" onClick={() => handlePageChange('TechBlog')}>View More</a>
+                    <a href="https://fathomless-lake-63055.herokuapp.com/" target="_blank" className="btn btn-primary" style={buttonStyle} onClick={() => handlePageChange('TechBlog')}>View App</a>
+                    <a href="https://github.com/asreedy82/tech-blog" target="_blank" className="btn btn-primary" style={buttonStyle} onClick={() => handlePageChange('TechBlog')}>GitHub</a>
                   </div>
               </div>
             </div>
             <div className="col" style={projectBoxStyle}>
-              <div className="card" style={{width: "18rem"}}>
-                <img className="card-img-top" src="..." alt="Card image cap"/>
-                  <div className="card-body">
+              <div className="card" style={{width: "35rem"}}>
                     <h5 className="card-title">Weather App</h5>
-                    <p className="card-text">A weather application based on city searches</p>
-                    <a href="#weatherapp" className="btn btn-primary" onClick={() => handlePageChange('Weather')}>View More</a>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col" style={projectBoxStyle}>
-              <div className="card" style={{width: "18rem"}}>
-                <img className="card-img-top" src="..." alt="Card image cap"/>
+                <img className="card-img-top" src={weatherImage} alt="Card image cap"/>
                   <div className="card-body">
-                    <h5 className="card-title">JavaScript Quiz</h5>
-                    <p className="card-text">A short quiz on basic JavaScript</p>
-                    <a href="#" className="btn btn-primary">View More</a>
+                    <p className="card-text">A weather application based on city searches</p>
+                    <a href="https://asreedy82.github.io/weather-dashboard-challenge/" target="_blank" className="btn btn-primary" style={buttonStyle} onClick={() => handlePageChange('Weather')}>View App</a>
+                    <a href="https://github.com/asreedy82/weather-dashboard-challenge" target="_blank" className="btn btn-primary" style={buttonStyle} onClick={() => handlePageChange('Weather')}>GitHub</a>
                   </div>
               </div>
-            </div>
-            <div className="col" style={projectBoxStyle}>
-              2 of 3
             </div>
           </div>
           <div className="row">
             <div className="col" style={projectBoxStyle}>
-              1 of 3
+              <div className="card" style={{width: "35rem"}}>
+                    <h5 className="card-title">JavaScript Quiz</h5>
+                <img className="card-img-top" src={quizImage} alt="Card image cap"/>
+                  <div className="card-body">
+                    <p className="card-text">A short quiz on basic JavaScript</p>
+                    <a href="https://asreedy82.github.io/javascript-quiz-challenge/" target="_blank" className="btn btn-primary" style={buttonStyle} onClick={() => handlePageChange('Quiz')}>View App</a>
+                    <a href="https://github.com/asreedy82/javascript-quiz-challenge" target="_blank" className="btn btn-primary" style={buttonStyle} onClick={() => handlePageChange('Quiz')}>GitHub</a>
+                  </div>
+              </div>
             </div>
             <div className="col" style={projectBoxStyle}>
-              2 of 3
+              <div className="card" style={{width: "35rem"}}>
+                    <h5 className="card-title">Note Taker App</h5>
+                <img className="card-img-top" src={noteImage} alt="Card image cap"/>
+                  <div className="card-body">
+                    <p className="card-text">An application where you can create and delete notes.</p>
+                    <a href="https://serene-eyrie-98195.herokuapp.com/" target="_blank" className="btn btn-primary" style={buttonStyle} onClick={() => handlePageChange('NoteTaker')}>View App</a>
+                    <a href="https://github.com/asreedy82/note-taker-challenge" target="_blank" className="btn btn-primary" style={buttonStyle} onClick={() => handlePageChange('NoteTaker')}>GitHub</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col" style={projectBoxStyle}>
+              <div className="card" style={{width: "35rem"}}>
+                    <h5 className="card-title">Text Editor Progressive Web App</h5>
+                <img className="card-img-top" src={textImage} alt="Card image cap"/>
+                  <div className="card-body">
+                    <p className="card-text">A text editor application that works even when offline</p>
+                    <a href="https://stark-ridge-36854.herokuapp.com/" target="_blank" className="btn btn-primary" style={buttonStyle} onClick={() => handlePageChange('TextEditor')}>View App</a>
+                    <a href="https://github.com/asreedy82/text-editor-pwa" target="_blank" className="btn btn-primary" style={buttonStyle} onClick={() => handlePageChange('TextEditor')}>GitHub</a>
+                  </div>
+              </div>
+            </div>
+            <div className="col" style={projectBoxStyle}>
+              <div className="card" style={{width: "35rem"}}>
+                    <h5 className="card-title">Secret Sauce</h5>
+                <img className="card-img-top" src={sauceImage} alt="Card image cap"/>
+                  <div className="card-body">
+                    <p className="card-text">A recipe application to share your family's secret recipes</p>
+                    <a href="https://damp-river-14558.herokuapp.com/" target="_blank" className="btn btn-primary" style={buttonStyle} onClick={() => handlePageChange('SecretSauce')}>View App</a>
+                    <a href="https://github.com/graciaan/SecretSauce" target="_blank" className="btn btn-primary" style={buttonStyle} onClick={() => handlePageChange('SecretSauce')}>GitHub</a>
+                  </div>
+              </div>
             </div>
           </div>
         </div>
