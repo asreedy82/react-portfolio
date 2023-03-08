@@ -12,6 +12,13 @@ code {
     monospace;
 }
 
-.navbar {
-  padding: 10%;
+#navbar {
+  padding: 2%;
+  background-color:rgb(167, 224, 222);
+}
+
+#footer {
+  margin-top: 100px;
+  background-color:rgb(167, 224, 222);
+  padding: 2%;
 }
