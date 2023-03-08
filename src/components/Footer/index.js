@@ -1,13 +1,30 @@
 import React from 'react';
+import gH from '../assets/images/GH-ss.png';
+import lI from '../assets/images/LI-ss.png';
 
 const Footer = () => {
-
 
 
     return (
         <div className="container">
             <footer>
-                <div className="badge-base LI-profile-badge mx-auto" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="anthony-reedy-0b873027" data-version="v1"><a className="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/anthony-reedy-0b873027?trk=profile-badge">Anthony Reedy</a></div>
+                <div className="container text-center">
+                    <h4>Anthony Reedy</h4>
+                    <p>410-206-2702</p>
+                    <p>
+                    <a href="mailto:a.reedy@gmail.com">
+                        a.reedy@gmail.com
+                    </a>
+                    </p>
+                    <div className="container">
+                        <a href="https://github.com/asreedy82" target="_blank">
+                            <img className="img-fluid" src={gH} alt="GitHub logo" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/anthony-reedy-0b873027/" target="_blank">
+                            <img className="img-fluid" src={lI} alt="LinkedIn logo" />
+                        </a>
+                    </div>
+                </div>
             </footer>
         </div>
     );
