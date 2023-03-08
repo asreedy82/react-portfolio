@@ -4,7 +4,7 @@
 
 This project is my first react app which will be my professional portfolio to use for finding a new job in web development. It features samples of my work with links to the deployed apps and their GitHub repos. It also gives visitors ways to contact me as well as the ability to view my resume. 
 
-[Link To Page]()
+[Link To Page](https://asreedy82.github.io/react-portfolio/)
 
 ## Installation
 
