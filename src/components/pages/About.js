@@ -7,7 +7,7 @@ export default function About() {
         padding: "20px",
     }
     const imageBox = {
-        
+
     }
 
     return (
@@ -16,18 +16,15 @@ export default function About() {
                 <h1>About Me</h1>
                 <div className="container" style={aboutStyle}>
                     <div className="row">
-                        <div className="col-sm">
-                            <div class="container" style={{ maxWidth: '800px', maxHeight: '600px' }}>
-                            <img src={aboutImage} style={{ width: "50%"}} alt="Picture of Anthony Reedy"/>
-                            </div>
+                        <div className="container" style={{ maxWidth: '800px', maxHeight: '600px' }}>
+                            <img src={aboutImage} className="img-fluid float-start" style={{ width: "50%" }} alt="Picture of Anthony Reedy" />
                         </div>
                     </div>
                 </div>
                 <div className="container" style={aboutStyle}>
                     <div className="row">
                         <div className="col-sm">
-                            <p>I'm a Coding Bootcamp student looking for a career in web application development.
-                                On this page, you'll find my contact info as well as links to examples of my work.
+                            <p>Welcome to my portfolio! I'm currently a Coding Bootcamp student working towards a certificate in Full Stack Web Development. Within this portfolio, you'll find several examples of my work with links each project's GitHub repo. I've also included contact information, my résumé, and a contact form.
                                 Thanks for stopping by!</p>
                         </div>
                     </div>
