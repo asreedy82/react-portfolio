@@ -14,7 +14,7 @@ N/A
 
 The webpage is intended to help me market myself to potential employers. It is a place to highlight my work and provide means for potential employers to get in contact with me.
 
-![Screen shot of main section of website]()
+![Screen shot of main section of website](/src/components/assets/images/react-portfolio-ss.png)
 
 ## Credits
 
