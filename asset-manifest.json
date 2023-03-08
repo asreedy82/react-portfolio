@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.c3e0624d.css",
+    "main.js": "/react-portfolio/static/js/main.fb7c4ec9.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/camelot_reedy-anthony-1.jpeg": "/react-portfolio/static/media/camelot_reedy-anthony-1.2a907066c6272a90e966.jpeg",
+    "static/media/weather-app-ss2.png": "/react-portfolio/static/media/weather-app-ss2.001063e249c8decaf3bb.png",
+    "static/media/JATE-ss.png": "/react-portfolio/static/media/JATE-ss.c960b7a40dd7ab44b570.png",
+    "static/media/tech-blog-ss.png": "/react-portfolio/static/media/tech-blog-ss.c4c4a376816f4c62e849.png",
+    "static/media/note-taker-ss.png": "/react-portfolio/static/media/note-taker-ss.20104ca5c7f97096248c.png",
+    "static/media/javascript-quiz-challenge-ss1.png": "/react-portfolio/static/media/javascript-quiz-challenge-ss1.9c1d6f6b0a234eb63aeb.png",
+    "static/media/03-Secretsaucelogo.png": "/react-portfolio/static/media/03-Secretsaucelogo.98545a3f9c53977ea12d.png",
+    "static/media/GH-ss.png": "/react-portfolio/static/media/GH-ss.b82dc3ad7163647f43d9.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.c3e0624d.css.map": "/react-portfolio/static/css/main.c3e0624d.css.map",
+    "main.fb7c4ec9.js.map": "/react-portfolio/static/js/main.fb7c4ec9.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3e0624d.css",
+    "static/js/main.fb7c4ec9.js"
+  ]
+}
