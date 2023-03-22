@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from 'bootstrap';
 import techBlogImage from '../assets/images/tech-blog-ss.png';
 import weatherImage from '../assets/images/weather-app-ss2.png';
-import quizImage from '../assets/images/javascript-quiz-challenge-ss1.png';
+import matchMyMood from '../assets/images/match-my-mood-ss.png'
 import noteImage from '../assets/images/note-taker-ss.png';
 import textImage from '../assets/images/JATE-ss.png';
 import sauceImage from '../assets/images/03-Secretsaucelogo.png';
@@ -50,12 +50,12 @@ export default function Projects({ handlePageChange }) {
           <div className="row">
             <div className="col" style={projectBoxStyle}>
               <div className="card" style={{width: "35rem"}}>
-                    <h5 className="card-title">JavaScript Quiz</h5>
-                <img className="card-img-top" src={quizImage} alt="Screenshot of JavaScript quiz app featuring first question"/>
+                    <h5 className="card-title">Match My Mood</h5>
+                <img className="card-img-top" src={matchMyMood} alt="Screenshot of MERN project for Match My Mood app featuring moods"/>
                   <div className="card-body">
-                    <p className="card-text">A short quiz on basic JavaScript</p>
-                    <a href="https://asreedy82.github.io/javascript-quiz-challenge/" target="_blank" className="btn btn-primary" style={buttonStyle} onClick={() => handlePageChange('Quiz')}>View App</a>
-                    <a href="https://github.com/asreedy82/javascript-quiz-challenge" target="_blank" className="btn btn-primary" style={buttonStyle} onClick={() => handlePageChange('Quiz')}>GitHub</a>
+                    <p className="card-text">An app to match music to your mood</p>
+                    <a href="https://salty-fjord-43236.herokuapp.com/" target="_blank" className="btn btn-primary" style={buttonStyle} onClick={() => handlePageChange('Quiz')}>View App</a>
+                    <a href="https://github.com/bobascript/Match-My-Mood" target="_blank" className="btn btn-primary" style={buttonStyle} onClick={() => handlePageChange('Quiz')}>GitHub</a>
                   </div>
               </div>
             </div>
